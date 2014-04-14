@@ -1,0 +1,362 @@
+@charset "utf-8";
+/* CSS Document */
+
+    <!-- 
+    body  {
+	
+    	font: 100% Verdana, Arial, Helvetica, sans-serif;
+    	background: #666666;
+    	margin: 0; /* es recomendable ajustar a cero el margen y el relleno del elemento body para lograr la compatibilidad con la configuración predeterminada de los diversos navegadores */
+    	padding: 0;
+    	text-align: center; /* esto centra el contenedor en los navegadores IE 5*. El texto se ajusta posteriormente con el valor predeterminado de alineación a la izquierda en el selector #container */
+    	color: #000000;
+    }
+    .twoColHybLtHdr #container {
+	width: 80%;
+	margin: 0 auto; /* los márgenes automáticos (conjuntamente con un ancho) centran la página */
+	border: 1px solid #000000;
+	text-align: left; /* esto anula text-align: center en el elemento body. */
+	background-color: #FCFCFC;
+    } 
+    .twoColHybLtHdr #header { 
+    	background: #DDDDDD; 
+    	padding: 0 10px;  /* este relleno coincide con la alineación izquierda de los elementos de los divs que aparecen bajo él. Si se utiliza una imagen en el #header en lugar de texto, es posible que le interese quitar el relleno. */
+    } 
+    .twoColHybLtHdr #header h1 {
+    	margin: 0; /* el ajuste en cero del margen del último elemento del div de #header evita la contracción del margen (un espacio inexplicable entre divs). Si el div tiene un borde alrededor, esto no es necesario, ya que también evita la contracción del margen */
+    	padding: 10px 0; /* el uso de relleno en lugar de margen le permitirá mantener el elemento alejado de los bordes del div */
+    }
+    
+    /* Sugerencias para sidebar1:
+    1. Dado que está trabajando en unidades relativas, es conveniente no utilizar relleno en la barra lateral. Se añadirá al ancho global en el caso de navegadores que cumplen los estándares, creando un ancho real desconocido. 
+    2. Dado que se utilizan las unidades em para el valor de barra lateral, tenga en cuenta que su ancho variará con los diferentes tamaños de texto predeterminados.
+    3. El espacio entre el lado del div y los elementos que contiene puede crearse colocando un margen izquierdo y derecho en dichos elementos, como se observa en la regla ".twoColHybLtHdr #sidebar1 p".
+    */
+    .twoColHybLtHdr #sidebar1 {
+    	float: left; 
+    	width: 12em; /* dado que este elemento es flotante, debe asignarse un ancho */
+    	background: #EBEBEB; /* el color de fondo se mostrará a lo largo de todo el contenido de la columna, pero no más allá */
+    	padding: 15px 0; /* el relleno superior e inferior crea un espacio visual dentro de este div  */
+    }
+    .twoColHybLtHdr #sidebar1 h3, .twoColHybLtHdr #sidebar1 p {
+    	margin-left: 10px; /* deben asignarse los márgenes izquierdo y derecho de cada elemento que vaya a colocarse en las columnas laterales */
+    	margin-right: 10px;
+    }
+    
+    /* Sugerencias para mainContent:
+    1. El espacio entre el mainContent y sidebar1 se crea con el margen izquierdo del div mainContent.  Con independencia de la cantidad de contenido que incluya el div sidebar1, permanecerá el espacio de la columna. Puede quitar el margen izquierdo si desea que el texto del div #mainContent llene el espacio de #sidebar1 cuando termine el contenido de #sidebar1.
+    2. Tenga en cuenta que es posible que se produzca la caída de un elemento flotante (la caída del área mainContent no flotante debajo de la barra lateral) si se coloca un elemento más ancho que él en el div mainContent. Con un diseño híbrido (ancho global basado en porcentajes con barra lateral basada en ems), puede que no sea posible calcular exactamente el ancho disponible. Si el tamaño del texto del usuario es superior a la media, tendrá un div de barra lateral más ancho y, en consecuencia, menos espacio en el div mainContent. Debe tener en cuenta esta limitación (particularmente si el cliente añade contenido con Contribute.
+    3. En el siguiente comentario condicional de Internet Explorer, la propiedad zoom se utiliza para asignar a mainContent "hasLayout." Esto puede contribuir a evitar diversos problemas específicos de IE.
+
+    */
+    .twoColHybLtHdr #mainContent { 
+    	margin: 0 20px 0 13em; /* el margen derecho puede asignarse en porcentajes o píxeles. Éste crea el espacio a lo largo de la parte derecha de la página. */
+    } 
+    .twoColHybLtHdr #footer { 
+    	padding: 0 10px; /* este relleno coincide con la alineación izquierda de los elementos de los divs que aparecen por encima de él. */
+    	background:#DDDDDD;
+    } 
+    .twoColHybLtHdr #footer p {
+    	margin: 0; /* el ajuste en cero de los márgenes del primer elemento del pie evitará que puedan contraerse los márgenes (un espacio entre divs) */
+    	padding: 10px 0; /* el relleno de este elemento creará espacio, de la misma forma que lo haría el margen, sin el problema de la contracción de márgenes */
+    }
+    
+    /* Varias clases diversas para su reutilización */
+    .fltrt { /* esta clase puede utilizarse para que un elemento flote en la parte derecha de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+    	float: right;
+    	margin-left: 8px;
+    }
+    .fltlft { /* esta clase puede utilizarse para que un elemento flote en la parte izquierda de la página. */
+    	float: left;
+    	margin-right: 8px;
+    }
+    .clearfloat { /* esta clase debe colocarse en un elemento div o break y debe ser el último elemento antes del cierre de un contenedor que incluya completamente a un elemento flotante */
+    	clear:both;
+        height:0;
+        font-size: 1px;
+        line-height: 0px;
+    }
+.miestilo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #FF0909;
+}
+.Estilo1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: bold;
+}
+.encabezado {
+	background-color: #082973;
+}
+P.especial {
+color : green;
+border: solid red;
+}
+    --> 
+	
+	 /*formularios*/
+  
+.contacto{
+	border: 1px solid #CED5D7;
+        font-family: monospace;
+        font-size:15px ;
+	border-radius: 6px;
+	padding: 20px 20px 10px;
+	margin-top: 1px;
+	background-color: #DEDED6;
+	box-shadow: 0px 5px 10px #B5C1C5, 0 0 0 10px #082973 inset;
+}
+.contacto label{
+	display: block; 
+	font-weight: bold;
+        
+}
+.contacto div{
+	margin-bottom: 5px;
+}
+.contacto input[type='text'], .contacto textarea{
+	padding: 4px 6px;
+	width: 294px;
+	/*border: 1px solid #CED5D7;*/
+	border-left: 2px solid #94948C;
+	border-right: 2px solid #F7EFEF;
+	border-top: 3px solid #94948C;
+	border-bottom: 2px solid #F7EFEF;
+	background-color: #DEDED6;
+	resize: none;
+	/*box-shadow:0 0 0 3px #94948C;*/
+	margin: 5px 0;
+}
+
+.contacto .select{
+	padding: 4px 6px;
+	width: 294px;
+	/*border: 1px solid #CED5D7;*/
+	border-left: 2px solid #94948C;
+	border-right: 2px solid #F7EFEF;
+	border-top: 3px solid #94948C;
+	border-bottom: 2px solid #F7EFEF;
+	background-color: #DEDED6;
+	resize: none;
+	box-shadow:0 0 0 3px #DEDED6;
+	margin: 5px 0;
+      font-family: monospace;  
+      font-size: 15px;
+}
+.contacto input[type='text']:focus, .contacto textarea:focus{
+	outline: none;
+	box-shadow:0 0 0 3px #DEDED6;
+}
+.contacto input[type='submit']{
+	/*border: 1px solid #CED5D7;
+	box-shadow:0 0 0 3px #EEF5F7;*/
+	border-left: 2px solid #EFEFEF;
+	border-right: 3px solid #9C9C94;
+	border-top: 2px solid #EFEFEF;
+	border-bottom: 2px solid #9C9C94;
+	background-color: #DEDED6;
+	padding: 8px 16px;
+	border-radius: 3px;
+	font-weight: #DEDED6;/*bold;*/
+	text-shadow: 1px 1px 0px white;
+	/*
+	background: #DEDED6; 
+	background: -moz-linear-gradient(top, #e4f1f6 0%, #cfe6ef 100%);
+	background: -webkit-linear-gradient(top, #e4f1f6 0%,#cfe6ef 100%); */
+}
+.contacto input[type='submit']:hover{
+	background: #DEDECE; 
+	background: -moz-linear-gradient(top, #edfcff 0%, #cfe6ef 100%);
+	background: -webkit-linear-gradient(top, #edfcff 0%,#cfe6ef 100%); 
+}
+.contacto input[type='submit']:active{
+	background: #DEDECE; 
+	background: -moz-linear-gradient(top, #cfe6ef 0%, #edfcff 100%);
+	background: -webkit-linear-gradient(top, #cfe6ef 0%,#edfcff 100%);
+}
+.contacto input[type='file']{
+	border: 1px solid #CED5D7;
+	box-shadow:0 0 0 3px #EEF5F7;
+	padding: 8px 16px;
+	border-radius: 20px;
+	font-weight: bold;
+	text-shadow: 1px 1px 0px white;
+	
+	background: #e4f1f6; 
+	background: -moz-linear-gradient(top, #e4f1f6 0%, #cfe6ef 100%);
+	background: -webkit-linear-gradient(top, #e4f1f6 0%,#cfe6ef 100%); 
+}
+.cerrar{
+  float:right; font-size:30px; margin: 5px 15px 0 0;  
+    
+}
+  /*formularios*/
+  
+  
+  /*menu*/
+  
+
+.urbangreymenu{
+width: 190px; /*width of menu*/
+}
+
+.urbangreymenu .headerbar{
+font: bold 13px Verdana;
+color: white;
+background: #606060 url(media/arrowstop.gif) no-repeat 8px 6px; /*last 2 values are the x and y coordinates of bullet image*/
+margin-bottom: 0; /*bottom spacing between header and rest of content*/
+text-transform: uppercase;
+padding: 7px 0 7px 31px; /*31px is left indentation of header text*/
+}
+
+.urbangreymenu ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+margin-bottom: 0; /*bottom spacing between each UL and rest of content*/
+}
+
+.urbangreymenu ul li{
+padding-bottom: 2px; /*bottom spacing between menu items*/
+}
+
+.urbangreymenu ul li a{
+font: normal 12px Arial;
+color: black;
+background: #E9E9E9;
+display: block;
+padding: 5px 0;
+line-height: 17px;
+padding-left: 8px; /*link text is indented 8px*/
+text-decoration: none;
+}
+
+.urbangreymenu ul li a:visited{
+color: black;
+}
+
+.urbangreymenu ul li a:hover{ /*hover state CSS*/
+color: white;
+background: black;
+}
+
+ 
+
+  /*end menu*/
+  
+    .requerido{
+    color: red;
+  }
+  
+  /*para los botones css
+   
+  
+  */
+  .button, .button span {
+	display: inline-block;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.button {
+	white-space: nowrap;
+	line-height:1em;
+	position:relative;
+	outline: none;
+	overflow: visible; 
+	cursor: pointer;
+	border: 1px solid #999;
+        border: rgba(0, 0, 0, .2) 1px solid;
+	border-bottom:rgba(0, 0, 0, .4) 1px solid;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	background: -moz-linear-gradient(
+		center top,
+		rgba(255, 255, 255, .1) 0%,
+		rgba(0, 0, 0, .1) 100%
+	);
+	background: -webkit-gradient(
+		linear,
+		center bottom,
+		center top,
+		from(rgba(0, 0, 0, .1)),
+		to(rgba(255, 255, 255, .1))
+	);
+	-moz-user-select: none;
+	-webkit-user-select:none;
+	-khtml-user-select: none;
+	user-select: none;
+	margin-bottom:10px;
+}
+.button.full, .button.full span {
+	display: block;
+}
+.button:hover, .button.hover {
+	background: -moz-linear-gradient(
+		center top,
+		rgba(255, 255, 255, .2) 0%,
+		rgba(255, 255, 255, .1) 100%
+	);
+	background: -webkit-gradient(
+		linear,
+		center bottom,
+		center top,
+		from(rgba(255, 255, 255, .1)),
+		to(rgba(255, 255, 255, .2))
+	);
+}
+.button:active, .button.active {
+	top:1px;
+}
+.button span {
+	position: relative;
+	color:#fff;
+	text-shadow:0 1px 1px rgba(0, 0, 0, 0.25);
+	border-top: rgba(255, 255, 255, .2) 1px solid;
+	padding:0.6em 1.3em;
+	line-height:1em;
+	text-decoration:none;
+	text-align:center;
+	white-space: nowrap;
+}
+
+.button.pequeno span {
+	font-size:12px;
+}
+.button.mediano span {
+	font-size:16px;
+}
+.button.grande span {
+	font-size:22px;
+}
+
+.button.rojo {
+	background-color: #e62727;
+}
+.button.naranja {
+	background-color: #ff5c00;
+}
+
+.button.azul {
+	background-color: #00ADEE;
+}
+
+A{
+	color: #0000cc;
+	text-decoration: none;
+}
+   /*para los botones css
+   
+  end
+  */
+  .oculto{display: none;}
+  .tabla  {
+font-family: monospace;
+font-size: 13px;
+border: 1px solid rgb(102, 102, 102);
+border-collapse: collapse;
+display: table;
+border-spacing: 2px;
+border-color: gray;
+border-color: gray; font-family: 'Helvetica', Arial, sans-serif;
+}  

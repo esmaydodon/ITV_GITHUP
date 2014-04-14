@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+fieldset.search {
+	border: none;
+	width: 250px;
+	margin: 0;
+
+}
+.search input, .search button {
+	border: none;
+	float: left;
+}
+.search input.box {
+	color: #000;
+	font-size: 1.2em;
+	width: 153px;
+	height: 26px;
+	padding: 8px 5px 0;
+	background:  url(../imagenes/busqueda/busqueda1.png) no-repeat;
+	margin-right: 5px;
+}
+.search input.box:focus {
+	background: url(../imagenes/busqueda/busqueda1.png) no-repeat left -35px;
+	outline: none;
+}
+.search button.btn {
+	width: 33px;
+	height: 33px;
+	cursor: pointer;
+	text-indent: -9999px;
+	background:url(../imagenes/busqueda/busqueda1.png) no-repeat top right;
+}
+.search button.btn:hover {
+	background:  url(../imagenes/busqueda/busqueda1.png) no-repeat bottom right;
+}
+
+.caja_busqueda{ width:200px;
+margin:0;
+margin-top:10px;
+
+float:left;
+margin-right:5px;}
+

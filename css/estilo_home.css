@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	margin: 0; 
+	padding: 0;
+	text-align: center;
+	color: #000000;
+}
+.incawasi #container {
+	width: 800px;
+	background: #FFFFFF;
+	margin: 0 auto; 
+	text-align: left; 
+}
+.incawasi #header {
+	background:url(../imagenes/header_bg.jpg) no-repeat ; background-position:bottom;
+	margin-top:20px;
+	height:150px;
+	padding:0 0px; 
+}
+.incawasi #header h1 {
+	margin: 0; 
+	padding: 10px 0; 
+}
+.incawasi #mainContent {
+	padding: 0 0px; 
+	background: #FFFFFF;
+}
+.incawasi #footer {
+	padding: 0 10px;
+	background:#dfedfe;
+	-moz-border-radius: 5px;
+border-radius: 5px;
+
+}
+.incawasi #footer p {
+	margin: 0; 
+	padding: 10px 0;
+	font-size:11px;
+
+}
+.incawasi #footer a {
+color:#000;
+text-decoration:none;}
+.banner{
+	margin-top:5px;}
+.logo{ width:210px; height:100px; padding-top:5px; margin-left:20px;}
+.titulo{
+	float:right;
+	padding-top:7px;
+	width:307px;
+	text-align: right;
+	font-size: 11px;
+	word-spacing:2.5em;
+}
+.titulo img{ margin-top:35px;}
+.menu{ margin-top:0 	px; padding-left:2px;height:30px;}
+.menu_espa{ margin-top:17px; padding-left:2px;height:30px;}
+.menu .img{ margin-right:9px; margin-left:9px}
+.bandera{
+	float:right;
+	width:500px;
+	text-align: right;margin: 0; 
+	padding: 10px 0;
+}
+.parrafo{ padding: 5px 10px;}
+p{
+	font-size:12px;
+	margin-bottom:10px;
+	padding-top: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	color: #000;
+	font-weight: normal;
+	line-height: 1.5em;
+	text-align: justify;
+}
+h1{  color:#2a659c; padding:0; margin:0; font-size:13px;}
+.title{ width:500px;
+float:right;
+padding-right:20px;
+}
+.title img{
+float:right;
+}
+.limpiar{
+	clear:both;
+}
+.izquierda{
+float:left;
+}
+.derecha{
+float:right;
+width:200px;
+padding-right:510px;
+font-size:11px;
+
+}
+
+.derecha ul{ margin:0;
+}
+
+.derecha ul li{ margin:0px 4px; padding:5px 10px; margin-top:7px;
+}
+.derecha ul li:hover{background:#7da7d9;	-moz-border-radius:3px;
+border-radius:3px;
+}
+.selcte_foot{background:#7da7d9;	-moz-border-radius:3px;
+border-radius:3px;
+}
+.mneu_home{ width:70px;
+float:right;
+margin-bottom:20px;
+font-size:10px;
+padding-right:20px;
+padding-left:230px;
+padding-top:10px;
+
+
+}
+.mneu_home a{ 
+text-decoration:none;
+}
+	

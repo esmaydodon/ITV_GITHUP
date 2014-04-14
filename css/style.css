@@ -1,0 +1,204 @@
+*{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border:0;
+	margin:0;
+}
+
+body{
+	background:-webkit-gradient(linear, 100% 0%, 0% 0%, from(#777), to(#dcdcdc));;
+	color:#222 ;
+	font-family: "Century Gothic";
+	font-size: 16px;
+	line-height: 1.5em;
+	overflow: hidden;
+}
+
+header, #content, footer {
+	background:transparent;
+	margin:.8em auto;
+	-moz-box-sizing:border-box;/*esto permite no aumentar el border*/
+	-ms-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	width: 90%;
+}
+
+header{
+	border-bottom: 2px solid red;
+}
+header nav{
+	background: transparent;
+	display: block;/*cambiar a inline-block y activar el width* para ocupar una sola linea ambios objetos*/
+	text-align: center;
+	vertical-align: middle;/*alinea al nav en el centro*/
+	/*width:25%;para ambos, logo y nav*/
+}
+
+h1{
+	color:red;
+	/*color:#3E2512;*/
+	font-size: 2em;
+	padding:0 0 5px 1.5em;
+	text-align: left;
+	/*text-shadow:#dedede 1px 1px 0px, #3E2512 -1px -1px 0px;*/
+}
+
+h4{
+	color:#222;
+	font-size: .7em;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+img{
+	max-width: 100%;
+}	
+
+nav {
+	border-top:2px solid red;
+	border-bottom: 2px solid red; 
+	font-size:1em;
+	margin: 0;
+	padding: .8em;
+	text-align: center;
+}
+
+nav ul{
+	list-style: none;
+}
+
+nav li{
+	cursor:pointer;
+	display: inline-block;
+	text-transform: uppercase;
+	/*-webkit-transform:rotate(90deg); esto proporsiona un efecto de giro*/
+}
+
+nav li a{border-radius:50px;
+	font-size: 2em;
+	color:red;
+	margin: .5em ;
+	padding:.3em.4em;
+}
+
+nav li a:hover {
+	background:red;
+	border-radius:50px;
+	color:#A68758;
+	text-decoration: none;
+}
+nav li:nth-child(2){
+	content: "-";
+	color:white;
+}
+
+.derecha,.izquierda{
+	background: transparent;
+	display: inline-block;
+	padding: 1em;
+	position: relative;
+	width: 49.5%;
+	vertical-align: middle;	
+}
+.derecha{
+	min-height:30em; 
+}
+.izquierda{
+	margin-left:.3%;
+}
+
+input, select {
+    border: 2px solid #222;
+    height: 30px;
+    margin: 0 0 20px 100px;
+    padding-right: 2px;
+    width: 220px;
+}
+
+.acceder{
+    height: 50px;
+    text-transform: uppercase;
+    width: 220px;
+}
+
+.acceder:hover{
+    background: #dedede;
+    border: 2px solid red;
+    color:red;
+    cursor: pointer;
+    -webkit-transition:all .4s ease-out;
+}
+
+footer{
+    height: 75px;
+    text-align: right;
+    bottom: 0;
+}
+
+footer p {
+    font-size: .8em;
+}
+
+footer a{
+    color:#dcdcdc;
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+footer a:hover{
+    color:red;
+}
+
+::selection{
+	background: red;
+	color:white;
+}
+
+
+/*breakpoints para el RWD 320 480 600 768 1024 1200
+@media screen and (max-width: 1200px) {
+	body {
+		background:#80D4FF;
+		font-size:1em;
+	}
+
+}
+@media screen and (max-width: 1024px) {
+	body{
+		background:#E3DC8D;
+		font-size:1em;
+	}
+		
+}
+@media screen and (max-width: 768px) {
+	body{
+		background:#E3B18D;
+		font-size: 1em;
+	}
+
+}
+@media screen and (max-width: 600px) {
+	
+	body{
+		background:#C5B0D5;
+		font-size:.8em;
+	}
+
+
+}
+@media screen and (max-width: 480px) {
+	body{
+		background:violet;
+		font-size: .6em;
+	}
+
+
+}
+@media screen and (max-width: 320px) {
+	body{
+		background:orange;
+	}
+	
+}*/

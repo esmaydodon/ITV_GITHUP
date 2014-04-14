@@ -1,0 +1,86 @@
+@charset "utf-8";
+@import url("estilo_home.css");
+/* CSS Document */
+
+
+.parrafo{ padding: 5px 10px;}
+
+
+
+.contenido_texto_left{  color:#414042;
+ padding:0 10px; margin-top:20px; width:380px;}
+
+.banner_menu_principal1{ width:395px;
+	}
+
+.home{
+	text-align: right; padding:0; margin:0; margin-top:10px;
+}
+/* fin de la lista con imagenes bg hover*/
+/* sub menu */
+.sub_menu{
+	
+	background:url(../imagenes/bg_blanco.png);
+	padding: 5px 5px;
+	margin:0 auto;
+	font-size: 11px;
+	height:15px;
+}
+
+.sub_menu ul{  margin:0; padding:0; background:url(imagenes/banner/quienes_somos.jpg) no-repeat;}
+.sub_menu ul li{  margin:0; padding: 0 4px; margin-right:4px;}
+.sub_menu a{ color:#004a8f; font-weight:500; width:100%; text-decoration: none}
+.sub_menu a:hover{ color:#000; }
+.link a{color:#000;font-weight:lighter;}
+/* fin */
+.banner_menu_principal{ width:376px;
+	}
+.banner_quienesosmos{ width:800px;; margin-top:5px; height:335px; background:url(../imagenes/banner/quienes_somos.jpg) no-repeat; padding-top:10px;}
+.banner_dondetrabajamos{ width:800px;; margin-top:5px; height:335px; background:url(../imagenes/banner/donde_trabajamos.jpg) no-repeat; padding-top:10px;}
+.banner_quehacemos{ width:800px;; margin-top:5px; height:335px; background:url(../imagenes/banner/quehacemos.jpg) no-repeat; padding-top:10px;}
+.banner_voluntarios{ width:800px;; margin-top:5px; height:335px; background:url(../imagenes/banner/voluntarios.jpg) no-repeat; padding-top:10px;}
+.banner_donaciones_sponsor{ width:800px;; margin-top:5px; height:335px; background:url(../imagenes/banner/donaciones_sponsor.jpg) no-repeat; padding-top:10px;}
+.banner_galeria{ width:800px;; margin-top:5px; height:335px; background:url(../imagenes/banner/galeria.jpg) no-repeat; padding-top:10px;}
+.banner_contactanos{ width:800px;; margin-top:5px; height:335px; background:url(../imagenes/banner/contactanos.jpg) no-repeat; padding-top:10px;}
+.banner_nuestrahistoria{ width:400px; margin-top:5px; height:335px; background:url(../imagenes/nuestrahistoria.jpg) no-repeat; padding-top:10px;}
+.banner_fundadores{ width:400px; margin-top:5px;  background:url(../imagenes/fundadores.jpg) no-repeat; padding-top:10px; height:540px;}
+.banner_europa{ width:400px; margin-top:5px;  background:url(../imagenes/europa.jpg) no-repeat; padding-top:10px; height:246px;}
+.banner_economia{ width:400px; margin-top:5px;  background:url(../imagenes/economia.jpg) no-repeat; padding-top:10px; height:290px;}
+.banner_empleo{ width:400px; margin-top:5px;  background:url(../imagenes/empleo.jpg) no-repeat; padding-top:10px; height:290px;}
+.banner_social{ width:400px; margin-top:5px;  background:url(../imagenes/situacionsocial.jpg) no-repeat; padding-top:10px; height:290px;}
+.banner_educacion{ width:400px; margin-top:5px;  background:url(../imagenes/educacion.jpg) no-repeat; padding-top:10px; height:258px;}
+.banner_educacion2{ width:400px; margin-top:5px;  background:url(../imagenes/educacion2.jpg) no-repeat; padding-top:10px; height:290px;}
+.banner_nutricion{ width:400px; margin-top:5px;  background:url(../imagenes/nutricion.jpg) no-repeat; padding-top:10px; height:290px;}
+.banner_atencionmedica{ width:400px; margin-top:5px;  background:url(../imagenes/atencionmedica.jpg) no-repeat; padding-top:10px; height:290px;}
+.banner_serviciosocial{ width:400px; margin-top:5px;  background:url(../imagenes/serviciosocial.jpg) no-repeat; padding-top:10px; height:467px;}
+.banner_diavoluntarios{ width:400px; margin-top:5px;  background:url(../imagenes/diavoluntarios.jpg) no-repeat; padding-top:10px; height:480px;}
+.banner_servoluntario{ width:400px; margin-top:5px;  background:url(../imagenes/servoluntario.jpg) no-repeat; padding-top:10px; height:290px;}
+.banner_faq{ width:400px; margin-top:5px;  background:url(../imagenes/faq.jpg) no-repeat; padding-top:10px; height:290px;}
+.banner_donacionvoluntarios{ width:400px; margin-top:5px;  background:url(../imagenes/donacionvoluntarios.jpg) no-repeat; padding-top:10px; height:290px;}
+.banner_sponsor{ width:400px; margin-top:5px;  background:url(../imagenes/sponsor.jpg) no-repeat; padding-top:10px; height:290px;}
+.banner_apadrinamiento{ width:400px; margin-top:5px;  background:url(../imagenes/apadrinamiento.jpg) no-repeat; padding-top:10px; height:300px;}
+.banner_comoayudar{ width:400px; margin-top:5px;  background:url(../imagenes/comoayudar.jpg) no-repeat; padding-top:10px; height:290px;}
+
+.clear{ clear:both;
+}
+.paypal{ margin:10px;
+}
+
+.leyenda{
+	margin-top:217px;
+	background:#FC0;
+	font-size:11px;
+	padding:15px 10px;
+	text-align: center; color:#2a659c;
+}
+/* fin  clase no home*/
+
+
+	
+
+
+.contenido_texto{ float:right; color:#414042;
+width:380px; padding:0 10px;}
+.contenido_texto_left{  color:#414042;
+ padding:0 10px; margin-top:20px;}
+.contenido_texto_left h1{  color:#2a659c; padding:0; margin:0; font-size:13px;}

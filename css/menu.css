@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*menu listas con im agenes*/
+.menu ul {  
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.menu ul li {
+	padding:0;
+	float:left;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:5px;
+	margin-left:7px;
+	margin-right:7px;
+	}
+.menu ul li:hover {
+	background:#7da7d9;
+	-moz-border-radius-topright: 7px;
+border-top-right-radius: 7px;
+	-moz-border-radius-topleft:7px;
+border-top-left-radius: 7px;
+	
+	}
+
+.menu ul li a {
+	text-decoration:none;
+}
+.menu ul li a:hover { }
+.menu ul li a span {
+	display:none; /*//Oculto el texto.*/
+}
+ul {  
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+ul li {
+	padding:0;
+	float:left;
+	padding-left:17px;
+	padding-right:17px;
+	padding-top:5px;
+	}
+
+
+.menu ul li a {
+	text-decoration:none;
+}
+.menu ul li a:hover { }
+.menu ul li a span {
+	display:none; /*//Oculto el texto.*/
+}
+/*#quienesomos {
+	background-image:url(../imagenes/quienessomos.png);background-repeat:no-repeat;
+}
+#dondetrabajamos {
+	background-image:url(../imagenes/dondetrabajamos.png);background-repeat:no-repeat;
+}
+#quehacemos {
+	background-image:url(../imagenes/quehacemos.png);background-repeat:no-repeat;
+}
+#voluntarios {
+	background-image:url(../imagenes/voluntarios.png);background-repeat:no-repeat;
+}
+#donaciones {
+	background-image:url(../imagenes/donaciones.png);background-repeat:no-repeat;
+}
+#galeria{
+	background-image:url(../imagenes/galeria.png);background-repeat:no-repeat; 
+}
+#contacto{
+	background-image:url(../imagenes/contacto.png);background-repeat:no-repeat;
+}
+/* fin de la lista con imagenes bg hover*/
+
+
+/*.a{ width:130px;margin-right:10px;}
+.a2{ whidth:100px; float:left; margin-right:5px;}
+.quienesomos{ width:110px; margin-right:5px;}
+.voluntarios{ width:78px; margin-right:5px;}
+.donaciones{ width:154px;margin-right:5px;}
+.galeria{ width:60px; margin-right:5px;}
+.contacto{ width:75px;}
+.home{
+	text-align: right; padding:0; margin:0; margin-top:10px;
+}
+*/
+.select_nav {
+		background:#7da7d9;
+	-moz-border-radius-topright: 7px;
+border-top-right-radius: 7px;
+	-moz-border-radius-topleft:7px;
+border-top-left-radius: 7px;
+}
+
+
+///////////////////////////////////////
+.menu_espa ul {  
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.menu_espa ul li {
+	padding:0;
+	float:left;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:5px;
+	margin-left:5px;
+	margin-right:5px;
+	}
+.menu_espa ul li:hover {
+	background:#7da7d9;
+	-moz-border-radius-topright: 7px;
+border-top-right-radius: 7px;
+	-moz-border-radius-topleft:7px;
+border-top-left-radius: 7px;
+	
+	}
+
+.menu ul li a {
+	text-decoration:none;
+}

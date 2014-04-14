@@ -1,0 +1,314 @@
+@charset "utf-8";
+@import url("caja_busqueda.css");
+/* CSS Document */
+*{ margin: 0; padding: 0; }
+body  {
+	
+	font: 12px Tahoma, Arial, Sans-Serif; color: #000;
+	background:#eee;
+	margin: 0; 
+	padding: 0;
+	text-align: center;
+	color: #000000;
+}
+p {
+	line-height: 22px;
+	margin: 0 0 22px;
+	color:#666;
+	font-size:13px;
+	font-family: Tahoma, Arial, Sans-Serif;
+}
+.thrColAbsHdr #container { 
+	position: relative;
+	width: 990px; 
+	background:url(../imagenes/bg/bg_container_sombra.jpg) top center repeat-y;
+	margin: 0 auto;
+	padding:0 0px;
+	text-align: left;
+	margin-top:0px;
+}
+
+h1 { font-size: 24px; font-weight: normal; margin-bottom: 15px;}
+h2 { font-size: 18px; font-weight: normal; margin-bottom: 10px; color: #333; }
+h3 { font-size: 14px; font-weight: bolder; margin-bottom: 10px; color: #333; }
+h4 { font-size: 18px; font-weight: normal; float: left; margin: 3px 0 10px; width: 460px; }
+a { text-decoration: none; color: #000;}
+.x { clear: both; }
+.break { /*border-top: 1px solid #ccc;*/ margin: 30px 5px; display: block; background:url(../imagenes/bg/bg_sombra_inferior.jpg) bottom center no-repeat; padding-bottom:10px; height:15px;}
+.break2 { /*border-top: 1px solid #ccc;*/ margin: 0px 5px; margin-bottom:20px; display: block; background:url(../imagenes/bg/bg_sombra_inferior2.png) bottom center no-repeat; padding-bottom:10px; height:15px;}
+.thrColAbsHdr #header { 
+	height: 120px; /* si está cambiando el orden de origen de las columnas, puede que le interese utilizar una altura en el encabezado que le permita asignar a las columnas un valor superior predecible */ 
+	padding: 0 10px 0 20px;  /* este relleno coincide con la alineación izquierda de los elementos de los divs que aparecen bajo él. Si se utiliza una imagen en el #header en lugar de texto, es posible que le interese quitar el relleno. */
+	background-image:url(../imagenes/logos/logo_bg.png);
+	background-repeat:no-repeat;
+	margin:0 5px;
+} 
+.thrColAbsHdr #header h1 {
+	margin: 0; /* el ajuste en cero del margen del último elemento del div de #header evita la contracción del margen (un espacio inexplicable entre divs). Si el div tiene un borde alrededor, esto no es necesario, ya que también evita la contracción del margen */
+	padding: 10px 0; /* el uso de relleno en lugar de margen le permitirá mantener el elemento alejado de los bordes del div */
+}
+
+.thrColAbsHdr #header .menu{ 
+	float:right;
+	width:500px;
+	padding-top:60px;
+	height:40px;
+	font-size:11px;}
+.thrColAbsHdr #sidebar1 {
+	position: absolute;
+	top: 60px;
+	left: 0;
+	width: 150px; /* el ancho real de este div, en navegadores que cumplen los estándares, o el modo de estándares de Internet Explorer, incluirá el relleno y el borde además del ancho */
+	background: #EBEBEB; /* el color de fondo se mostrará a lo largo de todo el contenido de la columna, pero no más allá */
+	padding: 15px 10px 15px 20px; /* el relleno mantiene el contenido del div alejado de los bordes */
+}
+.thrColAbsHdr #sidebar2 {
+	position: absolute;
+	top: 60px;
+	right: 0;
+	width: 160px; /* el ancho real de este div, en navegadores que cumplen los estándares, o el modo de estándares de Internet Explorer, incluirá el relleno y el borde además del ancho */
+	background: #EBEBEB; /* el color de fondo se mostrará a lo largo de todo el contenido de la columna, pero no más allá */
+	padding: 15px 10px 15px 20px; /* el relleno mantiene el contenido del div alejado de los bordes */
+}
+.thrColAbsHdr #slidehome { 
+	background:url(../imagenes/bg/bg_sombra_inferior3.jpg) bottom  no-repeat;
+	padding-bottom:25px;
+	margin:0 5px;
+	margin-bottom:28px;
+}
+
+.thrColAbsHdr #slidehome2 {
+
+	background:url(../imagenes/bg/bg_sombra_inferior2.jpg) bottom  no-repeat;
+	padding-bottom:12px;
+	margin:0 5px;
+	margin-bottom:30px;
+}
+
+.thrColAbsHdr #left { width: 600px; float: left; margin-left: 25px; display: inline;
+/*background:url(../imagenes/bg/slide1_home.png) center left no-repeat;*/}
+.thrColAbsHdr #right { width: 260px; float: right; border-left: 1px solid #ccc; padding-left: 36px; margin-right: 25px; display: inline;}
+		#right ul { margin-top: -11px; float:left; color: #666; margin: 0 0 10px 30px; line-height: 18px;  }
+	#right li{ border-bottom:1px dashed #CCC;}
+	
+.thrColAbsHdr #right img{ padding:10px;}
+.thrColAbsHdr #mainContent { 
+margin-left: 25px; padding-bottom: 10px; margin-bottom:30px;
+}
+
+	.small-post { float: left; width: 260px; margin-right: 75px; /*background:url(../imagenes/bg/bg_lista1_bottom.png) bottom left no-repeat;*/  }
+		.small-post img { border: 1px solid #ccc; padding: 3px; margin-bottom: 10px; }
+	.last { margin-right: 0;}
+		.last img { float:left;
+		border:1px solid #FFF;}
+		.izquierda{ float:left;}
+	
+		#mainContent ul { margin-top: -11px; float:left; color: #666; margin: 0 0 10px 30px; line-height: 18px;  }
+	#mainContent li{ border-bottom:1px dashed #CCC;}
+	
+.thrColAbsHdr #link_rapidos{
+	margin:0px 5px; padding:15px 20px;
+	font-size:10px;
+}	
+.thrColAbsHdr #link_rapidos .directorio{ float:right;
+width:300px;
+margin:0;
+background:url(../imagenes/bg/directorio_ir.png) no-repeat bottom center;}
+	
+.thrColAbsHdr #footer { 
+	padding: 0 10px 0 20px;
+	margin:0 5px;
+	background:url(../imagenes/bg/footer.png) top center;
+
+} 
+.thrColAbsHdr #footer p {
+	margin: 0px;
+	padding: 20px 0;
+	font-size:11px;
+		line-height: 15px;
+}
+.fltrt { /* esta clase puede utilizarse para que un elemento flote en la parte derecha de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* esta clase puede utilizarse para que un elemento flote en la parte izquierda de la página. */
+	float: left;
+	margin-right: 8px;
+}
+ 
+
+.read-more { background: url(../imagenes/bg/link.gif) no-repeat center left; padding-left: 13px; font-size: 10px; }
+
+.listas_catalogo{
+		width:160px;
+		height:230px;
+	background:#eee;
+	float:left;
+	padding:6px;
+	margin:0 13px;
+	margin-bottom:20px;
+	margin-top:20px;
+	border:1px solid #D3D3D3;}
+
+.listas_catalogo p{
+		font-size:11px;
+	border-bottom:1px dashed   #aaaaaa;
+	margin:0px 0;
+	padding:0 5px;}
+.categoria_lista{
+	height:130px;
+	margin-top:10px;
+	padding:0 5px;
+	}
+.categoria_lista p:hover{
+	background:#e5e5e5;}
+	
+
+	
+.vertodo{ 
+color:#F60;
+font-size:10px;
+text-align:right;
+margin-top:10px;
+}
+
+.catalogo_categoria{
+	width:114px;
+	height:230px;;
+	background:#eee;
+	float:left;
+	padding:7px;
+	margin:0 2px;
+	margin-bottom:20px;
+	margin-top:20px;
+	border:1px solid #D3D3D3;}
+	
+.catalogo_categoria p{
+	font-size:11px;
+/*	*/
+	margin:0px 0;
+	padding:0;}
+.catalogo_categoria p:hover{
+	background-color: e5e5e5;
+}	
+.lista_catalogo_hijo p{
+	border-bottom:1px dashed   #999;
+	text-transform:lowercase;
+	line-height:15px;
+	margin-bottom:5px;
+	padding-bottom:3px;}
+	
+.lista_catalogo_hijo p:hover{
+	background-color: e5e5e5;
+}	
+/* busquedas */
+
+#resultado{
+	padding: 5px 0;
+	margin:0;
+	margin-bottom:10px;}
+	
+#resultado:hover{
+	background:#eee;}
+	
+#resultado .img_resultado{
+	width:60px;
+	height:70px;
+	float:left;
+	padding-left:10px;}
+	
+#resultado .img_resultado img{
+	border:1px dashed #d5d5d5;}
+	
+.nombre_pruducto {
+	font-size:14px;
+	margin:0;
+	text-decoration: underline;
+	color:#03F;
+	letter-spacing:1px;}
+.descripcion_producto{
+	color:#000;
+}
+
+.busqueda_producto_top{
+	background:url(../imagenes/bg/bg_lista1_top.jpg) no-repeat bottom left;
+	padding-bottom:30px;}
+	
+.busqueda_producto_bottom{
+	background:url(../imagenes/bg/bg_lista1_bottom.png) no-repeat bottom left;
+	padding-top:20px;
+	}	
+/* detalle_producto*/
+.catalogo_categoria_detalle{
+	width:600px;
+	margin-right:20px;
+	background:#EEE;
+	float:left;
+	padding:7px;
+	margin:0 2px;
+	margin-bottom:20px;
+	margin-top:20px;
+	border:1px solid #D3D3D3;}
+
+.catalogo_categoria_detalle p{ font-size:16px;
+margin:0;
+padding:10px 0;
+border-bottom:1px dashed #999;
+color:#069;}
+
+.detalle_especificaciones{ 
+float:left;
+	width:160px;
+	font-size:10px;
+	padding-top:5px;
+	margin:5px 0;}
+	
+.detalle_descripcion{
+	float:left;
+	width:200px;
+	font-size:11px;
+	padding-top:5px;
+	margin:5px 0;}
+	
+.contenedor_detalle{
+	float:left;
+	padding-left:5px;}
+	
+.detalle_imagen{ 
+	float:left; 
+	width:130px;
+	height:100%;
+	background:#FFF;
+	padding:10px 5px;
+	margin-right:5px;
+	border:1px solid #D3D3D3;
+}
+
+#btn_back{
+	margin-top:20px;
+	height:30px;
+	float:right;
+	padding:10px;}
+	
+
+	
+.contenedor_lista_hijo{
+	margin:0;}
+	
+
+	
+.bg_catalogo_hijo{
+	height:33px;
+	color:#FFF;
+	list-style:none;
+	width:114px;
+	background:url(../imagenes/catalogo/catalogo_hijo_bg.png) no-repeat ;
+	padding:5px;}
+.bg_catalogo_hijo p{
+	color:#FFF;
+	font-weight:bold;
+}
+	
+.bg_catalogo_hijo li{
+	color:#FFF;
+	list-style:none;}
