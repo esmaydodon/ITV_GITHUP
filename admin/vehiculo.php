@@ -30,7 +30,7 @@ include("../func/funciones.php");
     <script type="text/javascript" src="../js/ajax.js"></script>
 <!--<script type="text/javascript" src="../js/jquery.js"></script>-->
 <!--<script type="text/javascript" src="../js/jquery.js"></script>-->
- <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+ <link rel="stylesheet" href="http://code.jquery.com/ui/1.8.21/themes/smoothness/jquery-ui.css">
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
   <link rel="stylesheet" href="/resources/demos/style.css">
@@ -154,10 +154,13 @@ ddaccordion.init({
          <!-- nuevo cliente -->
  <div id="formulario-vehiculo-nuevo" class="contacto">
  <form action="Registrandovehiculo.php" method="post" enctype="multipart/form-data" onSubmit="return checkForm(this);" >
-     placa_vehiculo :<spam class="requerido" >*</spam><input type="text" onBlur="checkField(this);" name="placa_vehiculo"  id="placa_vehiculo" bsize="60" maxlength="120" value="" /> <br>
-     anio_fabricasion :<spam class="requerido" >*</spam><input type="text" onBlur="checkField(this);" name="anio_fabricasion"  id="anio_fabricasion" bsize="60" maxlength="120" value="" /> <br>
- 
- <input type="hidden" name="estado_modelo" size="10"  value="1" /> <br/>
+     Placa de vehiculo :<spam class="requerido" >*</spam><input type="text" onBlur="checkField(this);" name="placa_vehiculo"  id="placa_vehiculo" bsize="60" maxlength="120" value="" /> <br>
+     Año de fabricasion :<spam class="requerido" >*</spam><input type="text" onBlur="checkField(this);" name="anio_fabricasion"  id="anio_fabricasion" bsize="60" maxlength="120" value="" /> <br>
+ <div id="datepicker"></div>
+<script>
+$( "#datepicker" ).datepicker();
+</script>
+ <input type="hidden" name="estado_vehiculo" size="10"  value="1" /> <br/>
 Modelo: <?php
  $consulata_tipo2=dime('select * from  modelo   where estado_modelo = 1  order by  idmodelo desc') or die(mysql_error());	
     echo"<select id ='modelo' name='modelo' class='select'>
@@ -181,7 +184,7 @@ Tipo: <?php
           <a class="button mediano azul" href="#">
              <span class="gestionarVehiculo" onclick="gestionarVehiculo()">Listar Vehiculos</span></a>
               <div id="listarVehiculo" class="oculto"></div>
-              <div id="editVehiculo" class="oculto"></div>
+              <div id="editVehiculo" class="oculto">¬¬</div>
  <!-- nuevo cliente END-->
       <!-- end #mainContent --></div>
     	<!-- Este elemento de eliminación siempre debe ir inmediatamente después del div #mainContent para forzar al div #container a que contenga todos los elementos flotantes hijos -->

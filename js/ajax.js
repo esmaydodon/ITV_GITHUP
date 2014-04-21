@@ -769,6 +769,17 @@ function pedirDatosModelo(idUsuario){
 	ajax.send("id="+idUsuario);		
 /*	alert(idUsuario);*/
 	}	
+function pedirDatosVehiculo(idUsuario){
+	divContenido = document.getElementById('editVehiculo');
+	ajax=objetoAjax();//chekar donde se mostrar�"""""""""""
+	ajax.open("POST","modificarVehiculo.php");
+	ajax.onreadystatechange=function(){
+		if(ajax.readyState ==4){
+			divContenido.innerHTML=ajax.responseText}}
+	ajax.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+	ajax.send("id="+idUsuario);		
+/*	alert(idUsuario);*/
+	}	
 function pedirDatosTipoProducto(idUsuario){
 	divContenido = document.getElementById('detalle4');
 	ajax=objetoAjax();//chekar donde se mostrar�"""""""""""

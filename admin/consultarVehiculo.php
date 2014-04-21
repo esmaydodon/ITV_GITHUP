@@ -35,7 +35,7 @@ while($documentos = mysql_fetch_array($consulta)){
      <a  style='cursor:pointer; text-decoration:underline;' onclick='eliminarVehiculo(".$documentos['idvehiculo'].")'>    <img src='../imagenes/remove.png' width='16' height='16'></a>
 	 </td>
     <td> 
-     <a  style='cursor:pointer; text-decoration:underline;' onclick='pedirDatosModelo(".$documentos['idvehiculo']. ")'><img   src='../imagenes/application_edit.png' width='16' height='16'></a> 
+     <a  style='cursor:pointer; text-decoration:underline;' onclick='pedirDatosVehiculo(".$documentos['idvehiculo']. ")'><img   src='../imagenes/application_edit.png' width='16' height='16'></a> 
 	 </td>
      </tr>
 	";
